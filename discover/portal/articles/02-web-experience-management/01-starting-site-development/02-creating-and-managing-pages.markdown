@@ -165,6 +165,13 @@ yet, you'll use the default theme for your pages.
 
 ![Figure 5: The Look and Feel interface allows you to choose a theme for the current site.](../../../images/look-and-feel-pages.png)
 
+You can apply themes to individual pages as well by selecting the 
+*Configure Page* option for a page and selecting the 
+*Define a specific look and feel for this page* option under the *Look and Feel* 
+category. 
+
+![Figure 6: You can define a specific look and feel for a page.](../../../images/define-a-specific-look-and-feel.png)
+
 Many themes include more than one color scheme. This allows you to keep the
 existing look and feel while giving your site a different flavor. The *Color
 Schemes* option is not available for the default theme.
@@ -351,7 +358,7 @@ you don't have any custom fields configured for the Page resource, you can
 navigate to the Control Panel &rarr; *Custom Fields* located under the
 *Configuration* tab. These are metadata about the page and can be anything you
 like, such as author or creation date. For more information on Custom Fields,
-see the [Custom Fields](/discover/portal/-/knowledge_base/6-2/custom-fields)
+see the [Custom Fields](/discover/portal/-/knowledge_base/6-2/custom5-fields)
 section.
 
 <!-- TODO: replace link above. -Cody -->
@@ -365,17 +372,23 @@ providing a seamless user experience for your site page.
 #### Details [](id=details)
 
 The first option you're given (and the default option selected when customizing
-an indiviual page) is *Details*. This option lets you name the page for any
+an individual page) is *Details*. This option lets you name the page for any
 localizations you need, set whether the page is hidden on the navigation menu,
 set an easy to remember, friendly URL for the page, and select the page type.
-Plus you can specify how apps are arranged on a page. Choose from the
-available installed templates to modify the layout. It's very easy for
-developers to define custom layouts and add them to the list. This is covered
-more thoroughly in the
-[Creating a Layout Template Project in the Plugins SDK](/develop/tutorials/-/knowledge_base/6-2/creating-a-layout-template-project-in-the-plugins-sdk)
-tutorial.
+Plus you can specify how apps are arranged on a page. Choose from the available 
+installed templates to modify the layout.
 
-<!-- TODO: Update tutorial link to 7.0, when available. -Cody -->
++$$$
+
+**Note:** If you require a more complex page layout, you can install the Liferay 
+Layout Templates app from [Liferay Marketplace](https://web.liferay.com/marketplace) 
+to access four additional layout templates. 
+
+$$$
+
+It's easy for developers to define custom layouts and add them to the list. This 
+is covered more thoroughly in the tutorial 
+[Layout Templates with the Liferay Theme Generator](/develop/tutorials/-/knowledge_base/7-0/creating-layout-templates-with-the-themes-generator-0). 
 
 #### Look and Feel [](id=look-and-feel)
 
@@ -496,15 +509,12 @@ Collaboration apps to the Lunar Resort site.
 See how easy it is to add applications to your pages? You've added the Wiki
 app and Blogs Aggregator app to a page. 
 
-![Figure 6: Your page layout options are virtually limitless with a slew of application and layout combinations.](../../../images/app-layout-design.png)
+![Figure 7: Your page layout options are virtually limitless with a slew of application and layout combinations.](../../../images/app-layout-design.png)
 
 It's easy to make your pages look exactly the way you want them to. If the
 default layout options provided aren't enough, you can even develop your own.
-To find more information about developing custom layout templates, please refer
-to the [Creating a Layout Template Project in the Plugins SDK](/develop/tutorials/-/knowledge_base/6-2/creating-a-layout-template-project-in-the-plugins-sdk)
-tutorial. 
-
-<!-- TODO: Replace link above. -Cody -->
+For more information about developing custom layout templates, see the tutorial 
+[Layout Templates with the Liferay Theme Generator](/develop/tutorials/-/knowledge_base/7-0/creating-layout-templates-with-the-themes-generator-0). 
 
 Next, you'll practice personalizing pages using page customizations!
 
@@ -523,7 +533,7 @@ from the *Options* button next to the Page you'd like to let site members
 modify. Then select the *Advanced* tab at the top of the page, expand the
 *Customization Settings* area, and click on the *Customizable* selector button. 
 
-![Figure 7: To enable page customizations, click on the *Configure Page* button next to the page, expand the *Customization Settings* area, and click on the *Customizable* button.](../../../images/page-customizations.png)
+![Figure 8: To enable page customizations, click on the *Configure Page* button next to the page, expand the *Customization Settings* area, and click on the *Customizable* button.](../../../images/page-customizations.png)
 
 Once you've enabled the *Customizable* selector, you can select the sections of
 the page you'd like to enable customization for, depending on the layout
@@ -537,7 +547,7 @@ toggle whether to view or hide the customizable regions. If you toggle the
 selector to view customizable regions, the regions on the page are color-coded
 to help distinguish customizable vs. non-customizable sections of the page.
 
-![Figure 8: Customizable regions are colored green and non-customizable regions are colored red.](../../../images/color-coded-customizable-regions.png)
+![Figure 9: Customizable regions are colored green and non-customizable regions are colored red.](../../../images/color-coded-customizable-regions.png)
 
 Site members can also choose between viewing their customized page and viewing
 the default page by selecting the *Options* button
@@ -568,7 +578,7 @@ Users can make two kinds of customizations to customizable regions. First, they
 can configure applications within the customizable regions. Second, they can add
 apps to or remove apps from the customizable regions.
 
-![Figure 9: Customizable areas are highlighted green when organizing apps on the page.](../../../images/customizable-regions.png)
+![Figure 10: Customizable areas are highlighted green when organizing apps on the page.](../../../images/customizable-regions.png)
 
 @product@ doesn't allow users to change a non-instanceable app's configuration
 inside a customizable region since those kinds of apps are tied to the site to
@@ -595,7 +605,7 @@ select their language in the Language Selector app to view a translation of your
 site into their native language. After closing the Configuration dialog box of
 the Language Selector app, the customized Welcome page looks like this:
 
-![Figure 10: In this example, the user added the Language app, and changed the display style from icons to a select box.](../../../images/customized-portal-homepage.png)
+![Figure 11: In this example, the user added the Language app, and changed the display style from icons to a select box.](../../../images/customized-portal-homepage.png)
 
 To allow users to customize a page, administrators must grant users permission
 to *Customize* pages under the Site section. This can be achieved by assigning
@@ -638,7 +648,7 @@ this with the following procedure:
    role.
 5. Click the *Save* button.
 
-![Figure 11: The Permissions offer a plethora of options for each role.](../../../images/web-content-page-permissions.png)
+![Figure 12: The Permissions offer a plethora of options for each role.](../../../images/web-content-page-permissions.png)
 
 Congratulations! You've changed the permissions for this page so only site
 administrators can view it. Any users you add to this role can now see the page.

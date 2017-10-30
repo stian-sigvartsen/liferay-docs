@@ -13,11 +13,18 @@ At the time of this writing, Liferay provides just under 40 Maven archetypes for
 you to use; expect this number to continue growing! These archetypes are
 generated from the Central Repository, unless you've configured for them to be
 generated from another remote repository (e.g., 
-[Liferay Repository](/develop/tutorials/-/knowledge_base/7-0/installing-liferay-maven-artifacts#liferay-repository)).
-You can view the Liferay-provided Maven archetypes by running the following
-command:
+[Liferay Repository](https://repository.liferay.com). You can view the
+Liferay-provided Maven archetypes by running the following command:
 
     mvn archetype:generate -Dfilter=liferay
+
+The generated archetypes are not all intended for the latest @product@ release.
+Some are intended for earlier versions of Liferay Portal (e.g., 6.2, 6.1, etc.).
+An easy way to tell if the archetype is compatible with @product-ver@ is by
+inspecting the archetype's package name. Archetypes with the
+`com.liferay.maven.archetypes` prefix are legacy archetypes. Those prefixed with
+`com.liferay.project.templates.[TYPE]` or `com.liferay.faces.archetype:[TYPE]`
+are compatible with @product-ver@.
 
 Here's a brief list of some popular Maven archetypes provided by Liferay:
 
@@ -37,7 +44,10 @@ Here's a brief list of some popular Maven archetypes provided by Liferay:
 - Service Wrapper
 - Vaadin Liferay portlet
 
-Visit Maven's
+For documentation on the archetypes (project templates) compatible with @product-ver@,
+see the
+[Project Templates](/develop/reference/-/knowledge_base/7-0/project-templates)
+reference section. Visit Maven's
 [Archetype Generation](http://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html)
 documentation for further details on how to modify the Maven archetype
 generation process.

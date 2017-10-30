@@ -89,7 +89,7 @@ class, which configures the asset renderer framework for the Blogs application.
     The `BlogsEntryAssetRenderer` also sets the resource bundle loader, which
     loads the language keys for a module. You can learn more about the resource
     bundle loader in the
-    [Overriding a Module's Language Keys](/develop/tutorials/-/knowledge_base/7-0/overriding-a-modules-language-keys)
+    [Overriding Language Keys](/develop/tutorials/-/knowledge_base/7-0/overriding-language-keys)
     tutorial.
 
     Also, make sure to define the `_entry` and `_resourceBundleLoader` fields in
@@ -662,7 +662,7 @@ renderer factory.
         }
 
     You can find a list of all available Lexicon icons at
-    [http://liferay.github.io/lexicon/content/icons-lexicon/](http://liferay.github.io/lexicon/content/icons-lexicon/).
+    [https://liferay.github.io/clay/content/icons-lexicon/](https://liferay.github.io/clay/content/icons-lexicon/).
 
 7.  Add methods that generate URLs to add and view the asset.
 

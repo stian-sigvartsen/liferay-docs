@@ -167,16 +167,16 @@ To blacklist a portlet from SPA, follow these steps:
 
 1. Open your portlet class.
 
-2. Set the `_singlePageApplication` property to false:
+2. Set the `com.liferay.portlet.single-page-application` property to false:
 
-        _singlePageApplication = false;
+        com.liferay.portlet.single-page-application=false
         
    If you prefer, you can set this property to false in your `portlet.xml` 
    instead by adding the following property to the `<portlet>` section:
    
         <single-page-application>false</single-page-application>
 
-3. Alternatively, you can override the [`isSinglePageApplication` method](@platform-ref@/7.0/javadocs/portal-impl/com/liferay/portal/model/impl/PortletImpl.html#isSinglePageApplication--)
+3. Alternatively, you can override the [`isSinglePageApplication` method](@platform-ref@/7.0-latest/javadocs/portal-impl/com/liferay/portal/model/impl/PortletImpl.html#isSinglePageApplication--)
    of the portlet to return `false`.
 
 To disable SPA for a form or link follow these steps:
@@ -269,9 +269,8 @@ Now you know how to configure and use SPA in @product@!
 
 ## Related Topics [](id=related-topics)
 
-[Configuring Modules for Liferay Portal's Loaders](/develop/tutorials/-/knowledge_base/7-0/configuring-modules-for-liferay-portals-loaders)
+[Configuring Modules for Liferay Portal's Loaders](/develop/tutorials/-/knowledge_base/7-0/configuring-modules-for-products-loaders)
 
 [Preparing your JavaScript Files for ES2015](/develop/tutorials/-/knowledge_base/7-0/preparing-your-javascript-files-for-es2015)
 
 [Using ES2015 Modules in Your Portlet](/develop/tutorials/-/knowledge_base/7-0/using-es2015-modules-in-your-portlet)
-

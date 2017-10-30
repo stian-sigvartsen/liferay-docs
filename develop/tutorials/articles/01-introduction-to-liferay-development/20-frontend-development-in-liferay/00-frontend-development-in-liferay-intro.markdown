@@ -18,9 +18,12 @@ love the most:
 
 ## Lexicon [](id=lexicon)
 
-@product@ follows a design language created by our designers called Lexicon. It
-is automatically available to application developers through a set of CSS
-classes, or our tag library.
+@product@ follows a design language created by our designers at Liferay called 
+[Lexicon Experience Language](https://lexicondesign.io/), which has been 
+implemented for use of the web as [Lexicon](https://liferay.github.io/clay/).
+
+Lexicon is automatically made available to application developers through a set 
+of CSS classes and markup, although it's even easier to use our tag library. 
 
 ## Templates [](id=templates)
 
@@ -35,10 +38,10 @@ combination of CSS, JavaScript, HTML, and FreeMarker templates. Although the
 default themes are nice, you may wish to create your own look and feel for your
 site.
 
-In @product@, Liferay provides an easy-to-use tool called the [Themes Generator](/develop/tutorials/-/knowledge_base/7-0/themes-generator)
+In @product@, Liferay provides an easy-to-use tool called the [Liferay Theme Generator](/develop/tutorials/-/knowledge_base/7-0/themes-generator)
 that helps automate the theme development process.
 
-Themes created with the Themes Generator give you access to [theme gulp tasks](/develop/reference/-/knowledge_base/7-0/theme-gulp-tasks)
+Themes created with the Liferay Theme Generator give you access to [theme gulp tasks](/develop/reference/-/knowledge_base/7-0/theme-gulp-tasks)
 that offer basic functions, such as `build` and `deploy`, along with 
 more complex interactions, such as auto deploying when a change is made and
 setting the base theme.

@@ -6,7 +6,7 @@ Administration* area of the Control Panel. Then click on *Script*. This is
 @product@'s script console. Change the script type to *Groovy* and replace the
 code in the script console with the following: 
 
-    number = com.liferay.portal.service.UserLocalServiceUtil.getUsersCount(); 
+    number = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsersCount(); 
     out.println(number); 
 
 Click the *Execute* button and check the script console or the log for the
@@ -26,7 +26,7 @@ You'll use Groovy again. Ensure that the script type in the script console is se
 to Groovy. Then execute the following code to check the status of the
 `agreedToTermsOfUse` user attribute:
 
-    import com.liferay.portal.service.UserLocalServiceUtil
+    import com.liferay.portal.kernel.service.UserLocalServiceUtil
 
     userCount = UserLocalServiceUtil.getUsersCount()
     users = UserLocalServiceUtil.getUsers(0, userCount)
@@ -41,7 +41,7 @@ skip the default user as well as the default admin user that's currently logged
 in and running the script. If you're logged in as someone other than
 test@liferay.com, make sure to update the following script before running it. 
 
-    import com.liferay.portal.service.UserLocalServiceUtil
+    import com.liferay.portal.kernel.service.UserLocalServiceUtil
 
     userCount = UserLocalServiceUtil.getUsersCount()
     users = UserLocalServiceUtil.getUsers(0, userCount)
@@ -105,14 +105,14 @@ The predefined variables can all be very useful when you're creating scripts.
 The `actionRequest` variable can be especially useful, as this script
 demonstrates:
 
-    import com.liferay.portal.util.*
+    import com.liferay.portal.kernel.util.*
 
     company = PortalUtil.getCompany(actionRequest)
-    out.println("Current company: ${company.getName()}\n")
+    out.println("Current Company:${company.getName()}\n")
 
-    out.println("User info:")
-    userInfo.each{ 
-            k, v -> out.println("${k}:${v}") 
+    out.println("User Info:")
+    userInfo.each { 
+            k,v -> out.println("${k}:${v}") 
     }
 
 ![Figure 1: Here's an example of invoking a Groovy script that uses the predefined `out`, `actionRequest`, and `userInfo` variables to print information about the current user.](../../../images/groovy-script-current-user-info.png)
@@ -123,9 +123,9 @@ The output of the script console is rendered as HTML content. Thus, you can
 embed HTML markup in your outputs to change their look and feel. Here's an
 example:
 
-    import com.liferay.portal.service.*
+    import com.liferay.portal.kernel.service.*
 
-    number = com.liferay.portal.service.UserLocalServiceUtil.getUsersCount();
+    number = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsersCount();
     out.println(
             """	
                     <div style="background-color:black; text-align: center">
@@ -176,8 +176,8 @@ can be switched so that the script can make permanent updates to the database.
 Here's an example Groovy script that show the preview mode concept in action:
 
     import java.util.Calendar
-    import com.liferay.portal.service.*
-    import com.liferay.portal.model.*
+    import com.liferay.portal.kernel.service.*
+    import com.liferay.portal.kernel.model.*
     import com.liferay.portal.kernel.dao.orm.*
     import static com.liferay.portal.kernel.workflow.WorkflowConstants.*
 
@@ -222,7 +222,7 @@ To bypass this limitation, you can send the output of the script console to a
 custom file instead of to the console itself or to the Liferay log. For example,
 consider this script:
 
-    import com.liferay.portal.service.*
+    import com.liferay.portal.kernel.service.*
     import com.liferay.portal.kernel.dao.orm.*
 
     // Output management
@@ -262,8 +262,8 @@ you'll learn how to leverage Liferay's script engine for designing workflows.
 
 ## Related Topics [](id=related-topics)
 
-[Invoking Liferay Services From Scripts](/discover/deployment/-/knowledge_base/7-0/invoking-liferay-services-from-scripts)
+[Invoking Liferay Services From Scripts](/discover/portal/-/knowledge_base/7-0/invoking-liferay-services-from-scripts)
 
-[Leveraging the Script Engine in Workflow](/discover/deployment/-/knowledge_base/7-0/leveraging-the-script-engine-in-workflow)
+[Leveraging the Script Engine in Workflow](/discover/portal/-/knowledge_base/7-0/leveraging-the-script-engine-in-workflow)
 
-[Using Custom Java Tools in the Script Engine](/discover/deployment/-/knowledge_base/7-0/using-custom-java-tools-in-the-script-engine)
+[Using Liferay's Script Engine](/discover/portal/-/knowledge_base/7-0/using-liferays-script-engine)

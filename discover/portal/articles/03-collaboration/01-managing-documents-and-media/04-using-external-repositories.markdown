@@ -34,7 +34,7 @@ Here are the CMIS repository integration steps:
 
 +$$$
 
-Interoperability with SharePoint and Documtum repositories is available to EE
+Interoperability with SharePoint and Documentum repositories is available to EE
 subscribers with the [Liferay SharePoint Connector](https://web.liferay.com/marketplace/-/mp/application/15188537)
 and [Liferay Documentum Connector](https://web.liferay.com/marketplace/-/mp/application/15098914)
 apps, available on the Marketplace.
@@ -54,7 +54,7 @@ encrypted passwords in the user sessions, SSO can't be used with the external
 repository types. 
 
 Let's configure Liferay Portal for what's required in authentication.
-In  a `portal-ext.properties` file in your [Liferay Home](/discover/deployment/-/knowledge_base/7-0/installing-liferay-portal#liferay-home),
+In  a `portal-ext.properties` file in your [Liferay Home](/discover/deployment/-/knowledge_base/7-0/installing-product#liferay-home),
 set a [`session.store.password`](https://docs.liferay.com/portal/7.0/propertiesdoc/portal.properties.html#Session)
 portal property to `true`:
 

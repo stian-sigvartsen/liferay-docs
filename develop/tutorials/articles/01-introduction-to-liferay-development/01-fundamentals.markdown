@@ -171,9 +171,12 @@ You can also use any JavaScript library, including
 -   React
 -   Your library of choice
 
-@product@ follows a design language created by our designers at Liferay called
-Lexicon. It is automatically available to application developers through a set
-of CSS classes, although it's even easier to use our tag library. 
+@product@ follows a design language created by our designers at Liferay called 
+[Lexicon Experience Language](https://lexicondesign.io/), which has been 
+implemented for use of the web as [Lexicon](https://liferay.github.io/clay/).
+
+Lexicon is automatically made available to application developers through a set 
+of CSS classes and markup, although it's even easier to use our tag library. 
 
 For templating, JavaEE's JSP is there as expected as well as FreeMarker, but the
 modularity of the platform allows you to use Google's Soy (aka Closure
@@ -220,12 +223,13 @@ module. The modules declare three important things:
 Using this information, the container can start all the modules that fulfill
 their definitions, implementations, dependencies, and priorities. 
 
-Anything a developer wants to do is implemented as one or more modules. If it's
-a new application, that application can depend on existing modules and define a
-dependency on them. This enables you to use functionality that's already there
-without rewriting it yourself for your app. If it's a customization, in many
-cases it's just a simple matter of defining your customization with a higher
-priority than the existing functionality. 
+Anything a developer wants to do is implemented as one or more modules. If it's 
+a new application, that application can depend on existing modules and 
+[define a dependency](/develop/tutorials/-/knowledge_base/7-0/configuring-dependencies) 
+on them. This enables you to use functionality that's already there without 
+rewriting it yourself for your app. If it's a customization, in many cases it's 
+just a simple matter of defining your customization with a higher priority than 
+the existing functionality. 
 
 This is the power of a modular architecture. 
 
